@@ -7,7 +7,7 @@ export default function App() {
       <Box overflow="hidden" mx="auto">
         <Box textAlign="center">
           <div class="avatar m-auto">
-            <div class="w-[350px] rounded-full">
+            <div class="w-[250px] rounded-full">
               <img src="https://api.lorem.space/image/face?hash=3174" />
             </div>
           </div>

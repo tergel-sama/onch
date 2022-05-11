@@ -50,14 +50,14 @@ export default function Navbar() {
               color="white"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Button variant="ghost">Features</Button>
-              <Button variant="ghost">Pricing</Button>
-              <Button variant="ghost">Blog</Button>
-              <Button variant="ghost">Company</Button>
-              <Button variant="ghost">Sign in</Button>
+              <Button variant="ghost">Home</Button>
+              <Button variant="ghost">Services</Button>
+              <Button variant="ghost">Industries</Button>
+              <Button variant="ghost">Careers</Button>
+              <Button variant="ghost">News</Button>
             </HStack>
             <Button colorScheme="brand" size="sm">
-              Get Started
+              EN
             </Button>
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
