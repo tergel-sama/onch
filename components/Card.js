@@ -15,7 +15,7 @@ export default function App({ number, title, content }) {
       <Box className="group" h={"480px"} w="380px" rounded="2xl">
         <Box
           rounded="2xl"
-          className="bg-opacity-0 bg-[#4eb85e] group-hover:bg-opacity-[0.3]"
+          className="transition ease-in-out delay-50 bg-opacity-0 hover:-translate-y-1 bg-[#4eb85e] group-hover:bg-opacity-[0.3]"
           zIndex={0}
           py={10}
           px={8}
@@ -51,7 +51,7 @@ export default function App({ number, title, content }) {
               px={"31px"}
               py={"13px"}
               color={"white"}
-              className="invisible group-hover:visible"
+              className="transition ease-in delay-50 opacity-0 group-hover:opacity-100"
               bgColor={"#4eb85e"}
             >
               View more
