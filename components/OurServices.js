@@ -30,7 +30,11 @@ export default function OurServices() {
   return (
     <>
       <h1 className="text-[#217b2f] text-[64px] font-bold">Our services</h1>
-      <Stack direction={{ base: "column", "2xl": "row" }}>
+      <Stack
+        p={{ xl: 12, base: 6 }}
+        overflow={"scroll"}
+        direction={{ base: "column", "2xl": "row" }}
+      >
         {data.map((item, index) => {
           return (
             <Card

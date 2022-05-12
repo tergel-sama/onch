@@ -18,23 +18,26 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {t("myKey")}
-      <Box p={{ md: 32, base: 6 }}>
-        <AboutUs />
-      </Box>
-      <Box p={{ md: 32, base: 6 }}>
-        <OurServices />
-      </Box>
-      <Box px={{ md: 32, base: 6 }}>
-        <HomeNews />
-      </Box>
-      <Box px={{ md: 32, base: 6 }}>
-        <Manateam />
-      </Box>
-      <Box px={{ md: 32, base: 6 }}>
-        <Career />
-      </Box>
-      <Box py={{ md: 20, base: 6 }} />
+      {/* {t("myKey")} */}
+
+      <main className="bg-white max-w-[1920px] overflow-hidden m-auto">
+        <Box p={{ md: 32, base: 6 }}>
+          <AboutUs />
+        </Box>
+        <Box p={{ md: 32, base: 6 }}>
+          <OurServices />
+        </Box>
+        <Box px={{ md: 32, base: 6 }}>
+          <HomeNews />
+        </Box>
+        <Box px={{ md: 32, base: 6 }}>
+          <Manateam />
+        </Box>
+        <Box px={{ md: 32, base: 6 }}>
+          <Career />
+        </Box>
+        <Box py={{ md: 20, base: 6 }} />
+      </main>
     </>
   );
 }

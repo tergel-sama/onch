@@ -50,7 +50,7 @@ export default function Career() {
       <h1 className="text-[#217b2f] text-[64px] font-bold my-12 mt-32">
         Careers at Onch
       </h1>
-      <SimpleGrid spacing={10} columns={3}>
+      <SimpleGrid spacing={10} columns={{ xl: 3, base: 1 }}>
         {data.map((item, index) => (
           <CareerItem
             key={index}

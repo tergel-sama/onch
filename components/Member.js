@@ -1,7 +1,7 @@
 import React from "react";
 import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
 
-export default function App() {
+export default function App({ name, position }) {
   return (
     <Flex w="full" alignItems="center" justifyContent="center">
       <Box overflow="hidden" mx="auto">
@@ -12,10 +12,10 @@ export default function App() {
             </div>
           </div>
           <chakra.span mt={6} display="block" fontSize="20px">
-            Managing Partner
+            {position}
           </chakra.span>
           <Link display="block" fontSize="24px" fontWeight="bold">
-            ONCHINSUREN DENDEVSAMBUU
+            {name}
           </Link>
         </Box>
       </Box>

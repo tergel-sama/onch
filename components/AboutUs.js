@@ -6,13 +6,22 @@ export default function AboutUs() {
   return (
     <Flex spacing={0} columns={{ base: 1, md: 2 }}>
       <Box w={"75rem"}>
-        <Text pb={12} fontSize={"24px"}>
+        <Text
+          textAlign={{ base: "justify", md: "left" }}
+          pb={12}
+          fontSize={"24px"}
+        >
           Onch & Company was founded in January 2004 as Onch Audit LLC for the
           sole purpose of providing trained, highly qualified, experienced, and
           independent local auditors.
         </Text>
 
-        <Text pb={12} fontSize={"24px"}>
+        <Text
+          textAlign={{ base: "justify", md: "left" }}
+          pb={12}
+          fontSize={"24px"}
+        >
+          Onch & Company was founded in January 2004 as Onch Audit LLC for the
           The founder and current Managing partner Onchinsuren Dendevsambuu had
           significant experience in auditing both global and local organizations
           in Mongolia and Russia at the time she founded Onch Audit. From
@@ -21,7 +30,11 @@ export default function AboutUs() {
           outsourcing and advisory services to its clients.
         </Text>
 
-        <Text pb={12} fontSize={"24px"}>
+        <Text
+          textAlign={{ base: "justify", md: "left" }}
+          pb={12}
+          fontSize={"24px"}
+        >
           Onch Audit joined the Deloitte network in 2012 and operated under
           Deloitte for 10 years until Deloitte’s global decision to withdraw
           from the Mongolian market due to the present macroeconomic business
@@ -33,7 +46,7 @@ export default function AboutUs() {
         </Text>
       </Box>
       <Box
-        display={{ base: "none", xl: "unset" }}
+        display={{ base: "none", "2xl": "unset" }}
         position={"relative"}
         w="full"
       >

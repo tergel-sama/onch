@@ -18,10 +18,10 @@ export default function App({ number, title, content }) {
           className="transition ease-in-out delay-50 bg-opacity-0 hover:-translate-y-1 bg-[#4eb85e] group-hover:bg-opacity-[0.3]"
           zIndex={0}
           py={10}
-          px={8}
+          px={{ xl: 8, base: 3 }}
         >
           <chakra.h2
-            fontSize={{ base: "2xl", md: "100px" }}
+            fontSize={"100px"}
             mt={{ base: 2, md: 0 }}
             fontWeight="bold"
             color={"#217b2f"}

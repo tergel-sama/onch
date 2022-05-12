@@ -31,13 +31,13 @@ export default function Footer() {
       py={{ xl: 24, base: 6 }}
       px={{ xl: 32, base: 6 }}
     >
-      <SimpleGrid columns={3} spacing={8}>
+      <SimpleGrid columns={{ md: 3, base: 1 }} spacing={8}>
         <Stack spacing={6}>
           <Box>
-            <Image src={Logo?.src} />
+            <Image w={"340px"} src={Logo?.src} />
           </Box>
         </Stack>
-        <Stack align={"flex-start"}>
+        <Stack align={{ xl: "flex-start", base: "center" }}>
           <ListHeader>Company</ListHeader>
           <Link fontSize={"20px"} href={"#"}>
             About us
