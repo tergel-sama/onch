@@ -1,14 +1,14 @@
 import React from "react";
 import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
 
-export default function App({ name, position }) {
+export default function App({ name, position, image }) {
   return (
     <Flex w="full" alignItems="center" justifyContent="center">
       <Box overflow="hidden" mx="auto">
         <Box textAlign="center">
           <div class="avatar m-auto">
             <div class="w-[250px] rounded-full">
-              <img src="https://api.lorem.space/image/face?hash=3174" />
+              <img src={image?.src} />
             </div>
           </div>
           <chakra.span mt={6} display="block" fontSize="20px">
