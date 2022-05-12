@@ -32,7 +32,6 @@ export default function OurServices() {
       <h1 className="text-[#217b2f] text-[64px] font-bold">Our services</h1>
       <Stack
         p={{ xl: 12, base: 6 }}
-        overflow={"scroll"}
         direction={{ base: "column", "2xl": "row" }}
       >
         {data.map((item, index) => {
