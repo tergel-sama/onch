@@ -12,9 +12,10 @@ import {
   VStack,
   IconButton,
   CloseButton,
+  Image,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
-// import { Logo } from "@choc-ui/logo";
+import Logo from "../images/logo.png";
 
 export default function Navbar() {
   const mobileNav = useDisclosure();
@@ -36,12 +37,13 @@ export default function Navbar() {
               display="flex"
               alignItems="center"
             >
+              <Image w={"150px"} src={Logo?.src} />
               {/* <Logo /> */}
               <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 color={"white"} fontSize="xl" fontWeight="medium" ml="2">
+            {/* <chakra.h1 color={"white"} fontSize="xl" fontWeight="medium" ml="2">
               Choc
-            </chakra.h1>
+            </chakra.h1> */}
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
