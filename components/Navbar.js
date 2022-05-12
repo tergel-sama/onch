@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 import {
   chakra,
@@ -19,6 +20,7 @@ import Logo from "../images/logo.png";
 
 export default function Navbar() {
   const mobileNav = useDisclosure();
+  const router = useRouter();
 
   return (
     <React.Fragment>
@@ -52,11 +54,24 @@ export default function Navbar() {
               color="white"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Button variant="ghost">Home</Button>
-              <Button variant="ghost">Services</Button>
-              <Button variant="ghost">Industries</Button>
-              <Button variant="ghost">Careers</Button>
-              <Button variant="ghost">News</Button>
+              <Button onClick={() => router.push("/#aboutUs")} variant="ghost">
+                About us
+              </Button>
+              <Button
+                onClick={() => router.push("/#ourServices")}
+                variant="ghost"
+              >
+                Services
+              </Button>
+              <Button onClick={() => router.push("/#news")} variant="ghost">
+                News
+              </Button>
+              <Button onClick={() => router.push("/#manaTeam")} variant="ghost">
+                Team
+              </Button>
+              <Button onClick={() => router.push("/#careers")} variant="ghost">
+                Careers
+              </Button>
             </HStack>
             <Button colorScheme="brand" size="sm">
               EN
@@ -91,8 +106,12 @@ export default function Navbar() {
                   onClick={mobileNav.onClose}
                 />
 
-                <Button w="full" variant="ghost">
-                  Features
+                <Button
+                  onClick={() => router.push("/#aboutUs")}
+                  w="full"
+                  variant="ghost"
+                >
+                  About us
                 </Button>
                 <Button w="full" variant="ghost">
                   Pricing

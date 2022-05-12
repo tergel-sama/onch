@@ -21,21 +21,31 @@ export default function Home() {
       {/* {t("myKey")} */}
 
       <main className="bg-white max-w-[1920px] overflow-hidden m-auto">
-        <Box p={{ md: 32, base: 6 }}>
-          <AboutUs />
-        </Box>
-        <Box p={{ md: 32, base: 6 }}>
-          <OurServices />
-        </Box>
-        <Box px={{ md: 32, base: 6 }}>
-          <HomeNews />
-        </Box>
-        <Box px={{ md: 32, base: 6 }}>
-          <Manateam />
-        </Box>
-        <Box px={{ md: 32, base: 6 }}>
-          <Career />
-        </Box>
+        <section id="aboutUs">
+          <Box p={{ md: 32, base: 6 }}>
+            <AboutUs />
+          </Box>
+        </section>
+        <section id="ourServices">
+          <Box px={{ md: 32, base: 6 }}>
+            <OurServices />
+          </Box>
+        </section>
+        <section id="news">
+          <Box px={{ md: 32, base: 6 }}>
+            <HomeNews />
+          </Box>
+        </section>
+        <section id="manaTeam">
+          <Box px={{ md: 32, base: 6 }}>
+            <Manateam />
+          </Box>
+        </section>
+        <section id="careers">
+          <Box px={{ md: 32, base: 6 }}>
+            <Career />
+          </Box>
+        </section>
         <Box py={{ md: 20, base: 6 }} />
       </main>
     </>
