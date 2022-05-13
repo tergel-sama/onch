@@ -1,5 +1,10 @@
 import React from "react";
 import { useRouter } from "next/router";
+import {
+  useTranslation,
+  useLanguageQuery,
+  LanguageSwitcher,
+} from "next-export-i18n";
 
 import {
   chakra,
@@ -21,6 +26,7 @@ import Logo from "../images/logo.png";
 export default function Navbar() {
   const mobileNav = useDisclosure();
   const router = useRouter();
+  const { t } = useTranslation();
 
   return (
     <React.Fragment>
@@ -41,7 +47,7 @@ export default function Navbar() {
             >
               <Image w={"150px"} src={Logo?.src} />
               {/* <Logo /> */}
-              <VisuallyHidden>Choc</VisuallyHidden>
+              <VisuallyHidden>Onch</VisuallyHidden>
             </chakra.a>
             {/* <chakra.h1 color={"white"} fontSize="xl" fontWeight="medium" ml="2">
               Choc
@@ -55,25 +61,25 @@ export default function Navbar() {
               display={{ base: "none", md: "inline-flex" }}
             >
               <Button onClick={() => router.push("/#aboutUs")} variant="ghost">
-                About us
+                {t("nav1")}
               </Button>
               <Button
                 onClick={() => router.push("/#ourServices")}
                 variant="ghost"
               >
-                Services
+                {t("nav2")}
               </Button>
               <Button onClick={() => router.push("/#news")} variant="ghost">
-                News
+                {t("nav3")}
               </Button>
               <Button onClick={() => router.push("/#manaTeam")} variant="ghost">
-                Team
+                {t("nav4")}
               </Button>
               <Button onClick={() => router.push("/#careers")} variant="ghost">
-                Careers
+                {t("nav5")}
               </Button>
             </HStack>
-            <Button colorScheme="brand" size="sm">
+            <Button onClick={() => {}} colorScheme="brand" size="sm">
               EN
             </Button>
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -99,6 +105,8 @@ export default function Navbar() {
                 m={2}
                 spacing={3}
                 rounded="sm"
+                bgColor={"black"}
+                textColor={"white"}
                 shadow="sm"
               >
                 <CloseButton
@@ -111,19 +119,35 @@ export default function Navbar() {
                   w="full"
                   variant="ghost"
                 >
-                  About us
+                  {t("nav1")}
                 </Button>
-                <Button w="full" variant="ghost">
-                  Pricing
+                <Button
+                  onClick={() => router.push("/#ourServices")}
+                  w="full"
+                  variant="ghost"
+                >
+                  {t("nav2")}
                 </Button>
-                <Button w="full" variant="ghost">
-                  Blog
+                <Button
+                  onClick={() => router.push("/#news")}
+                  w="full"
+                  variant="ghost"
+                >
+                  {t("nav3")}
                 </Button>
-                <Button w="full" variant="ghost">
-                  Company
+                <Button
+                  onClick={() => router.push("/#manaTeam")}
+                  w="full"
+                  variant="ghost"
+                >
+                  {t("nav4")}
                 </Button>
-                <Button w="full" variant="ghost">
-                  Sign in
+                <Button
+                  onClick={() => router.push("/#careers")}
+                  w="full"
+                  variant="ghost"
+                >
+                  {t("nav5")}
                 </Button>
               </VStack>
             </Box>

@@ -9,6 +9,7 @@ import {
   IconButton,
   Image,
 } from "@chakra-ui/react";
+import { useTranslation } from "next-export-i18n";
 import { BiMailSend } from "react-icons/bi";
 
 import Logo from "../images/logo.png";
@@ -22,6 +23,7 @@ const ListHeader = ({ children }) => {
 };
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <Container
       textColor={"white"}
@@ -38,25 +40,24 @@ export default function Footer() {
           </Box>
         </Stack>
         <Stack align={{ xl: "flex-start", base: "center" }}>
-          <ListHeader>Company</ListHeader>
+          <ListHeader>{t("footer1")}</ListHeader>
           <Link fontSize={"20px"} href={"#"}>
-            About us
+            {t("footer2")}
           </Link>
           <Link fontSize={"20px"} href={"#"}>
-            Core services
+            {t("footer3")}
           </Link>
           <Link fontSize={"20px"} href={"#"}>
-            News letter
+            {t("footer4")}
           </Link>
           <Link fontSize={"20px"} href={"#"}>
-            Contact us
+            {t("footer5")}
           </Link>
         </Stack>
         <Stack align={"flex-start"}>
           <ListHeader>Newsletter</ListHeader>
           <Text fontSize={"20px"} href={"#"}>
-            Best solution for your it startup business, consecteturadipiscing
-            elit.
+            {t("footer6")}
           </Text>
           <Stack direction={"row"}>
             <Input

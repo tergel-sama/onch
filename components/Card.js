@@ -1,15 +1,9 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Image,
-  Flex,
-  useColorModeValue,
-  Link,
-  Button,
-} from "@chakra-ui/react";
+import { chakra, Box, Flex, Button } from "@chakra-ui/react";
+import { useTranslation } from "next-export-i18n";
 
 export default function App({ number, title, content }) {
+  const { t } = useTranslation();
   return (
     <Flex w="full" alignItems="center" justifyContent="center">
       <Box className="group" h={"480px"} w="380px" rounded="2xl">
@@ -54,7 +48,7 @@ export default function App({ number, title, content }) {
               className="transition ease-in delay-50 opacity-0 group-hover:opacity-100"
               bgColor={"#4eb85e"}
             >
-              View more
+              {t("readMore")}
             </Button>
           </Flex>
         </Box>

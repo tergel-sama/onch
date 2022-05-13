@@ -1,6 +1,8 @@
 import { Button } from "@chakra-ui/react";
+import { useTranslation } from "next-export-i18n";
 
 export default function NewsCard({ imageUrl, body, date }) {
+  const { t } = useTranslation();
   return (
     <>
       <a class="relative block h-[320px] rounded-2xl bg-black group" href="">
@@ -27,7 +29,7 @@ export default function NewsCard({ imageUrl, body, date }) {
               fontSize={"20px"}
               bgColor={"#4eb85e"}
             >
-              Read more
+              {t("readMore")}
             </Button>
           </div>
         </div>

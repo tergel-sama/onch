@@ -31,7 +31,7 @@ export default function OurServices() {
           content: t("ourSer42"),
         },
       ]),
-    []
+    [t("ourSer")]
   );
   return (
     <>

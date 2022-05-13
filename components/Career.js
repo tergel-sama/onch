@@ -35,7 +35,7 @@ export default function Career() {
           content: t("carContent6"),
         },
       ]),
-    []
+    [t("career")]
   );
   return (
     <>
@@ -48,7 +48,7 @@ export default function Career() {
             key={index}
             title={item.title}
             content={item.content}
-            long={index === 5 ? true : false}
+            long={true}
           />
         ))}
       </SimpleGrid>

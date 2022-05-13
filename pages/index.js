@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import {
   useTranslation,
   useLanguageQuery,
@@ -14,12 +14,13 @@ import Career from "../components/Career";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Hero />
       {/* {t("myKey")} */}
-
+      <LanguageSwitcher lang="mn">mn</LanguageSwitcher> |{" "}
+      <LanguageSwitcher lang="en">en</LanguageSwitcher>
       <main className="bg-white max-w-[1920px] overflow-hidden m-auto">
         <section id="aboutUs">
           <Box p={{ md: 32, base: 6 }}>

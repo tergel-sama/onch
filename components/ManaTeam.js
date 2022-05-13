@@ -18,37 +18,37 @@ export default function Manateam() {
     () =>
       setData([
         {
-          name: t("manPos1"),
-          position: t("manName1"),
+          name: t("manName1"),
+          position: t("manPos1"),
           image: dendevsambuu,
         },
         {
-          name: t("manPos2"),
-          position: t("manName2"),
+          name: t("manName2"),
+          position: t("manPos2"),
           image: shagdarsuren,
         },
         {
-          name: t("manPos3"),
-          position: t("manName3"),
+          name: t("manName3"),
+          position: t("manPos3"),
           image: nuurbatsuh,
         },
         {
-          name: t("manPos4"),
-          position: t("manName4"),
+          name: t("manName4"),
+          position: t("manPos4"),
           image: bayannemeh,
         },
         {
-          name: t("manPos5"),
-          position: t("manName5"),
+          name: t("manName5"),
+          position: t("manPos5"),
           image: byambasuren,
         },
         {
-          name: t("manPos6"),
-          position: t("manName6"),
+          name: t("manName6"),
+          position: t("manPos6"),
           image: javkhlant,
         },
       ]),
-    []
+    [t("manaTeam")]
   );
   return (
     <>
