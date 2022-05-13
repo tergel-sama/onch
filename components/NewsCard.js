@@ -1,11 +1,11 @@
 import { Button } from "@chakra-ui/react";
 import { useTranslation } from "next-export-i18n";
 
-export default function NewsCard({ imageUrl, body, date }) {
+export default function NewsCard({ imageUrl, body, date, go }) {
   const { t } = useTranslation();
   return (
     <>
-      <a class="relative block h-[320px] rounded-2xl bg-black group" href="">
+      <div class="relative block h-[320px] rounded-2xl bg-black group">
         <img
           class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-50 rounded-2xl"
           src={imageUrl?.src}
@@ -26,6 +26,7 @@ export default function NewsCard({ imageUrl, body, date }) {
               fontWeight={500}
               px={"30px"}
               py={"13px"}
+              onClick={() => go()}
               fontSize={"20px"}
               bgColor={"#4eb85e"}
             >
@@ -33,7 +34,7 @@ export default function NewsCard({ imageUrl, body, date }) {
             </Button>
           </div>
         </div>
-      </a>
+      </div>
     </>
   );
 }

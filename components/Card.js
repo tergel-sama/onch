@@ -1,11 +1,28 @@
 import React from "react";
-import { chakra, Box, Flex, Button } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Flex,
+  Button,
+  Modal,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { useTranslation } from "next-export-i18n";
+
+import CustomModal from "./Modal";
 
 export default function App({ number, title, content }) {
   const { t } = useTranslation();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Flex w="full" alignItems="center" justifyContent="center">
+      <CustomModal
+        title={title}
+        content={content}
+        isOpen={isOpen}
+        onClose={onClose}
+      />
       <Box className="group" h={"480px"} w="380px" rounded="2xl">
         <Box
           rounded="2xl"
@@ -42,6 +59,7 @@ export default function App({ number, title, content }) {
               mt={"6"}
               fontWeight={500}
               rounded={"20px"}
+              onClick={onOpen}
               px={"31px"}
               py={"13px"}
               color={"white"}

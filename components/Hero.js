@@ -1,9 +1,11 @@
 import { Button } from "@chakra-ui/react";
 import { useTranslation } from "next-export-i18n";
+import { useRouter } from "next/router";
 import Nuur from "../images/nuur.jpg";
 
 export default function Hero() {
   const { t } = useTranslation();
+  const router = useRouter();
   return (
     <div
       class="hero min-h-screen"
@@ -25,6 +27,7 @@ export default function Hero() {
             py={3}
             color="white"
             bgColor="#4eb85e"
+            onClick={() => router.push("/news/first")}
           >
             {t("readMore")}
           </Button>

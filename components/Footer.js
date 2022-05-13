@@ -42,9 +42,6 @@ export default function Footer() {
         <Stack align={{ xl: "flex-start", base: "center" }}>
           <ListHeader>{t("footer1")}</ListHeader>
           <Link fontSize={"20px"} href={"#"}>
-            {t("footer2")}
-          </Link>
-          <Link fontSize={"20px"} href={"#"}>
             {t("footer3")}
           </Link>
           <Link fontSize={"20px"} href={"#"}>
@@ -53,9 +50,12 @@ export default function Footer() {
           <Link fontSize={"20px"} href={"#"}>
             {t("footer5")}
           </Link>
+          <Link w={{ base: "15rem", xl: "30rem" }} fontSize={"20px"} href={"#"}>
+            {t("footer2")}
+          </Link>
         </Stack>
-        <Stack align={"flex-start"}>
-          <ListHeader>Newsletter</ListHeader>
+        <Stack align={{ xl: "flex-start", base: "center" }}>
+          <ListHeader>{t("footer7")}</ListHeader>
           <Text fontSize={"20px"} href={"#"}>
             {t("footer6")}
           </Text>

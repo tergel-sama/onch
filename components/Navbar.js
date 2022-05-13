@@ -36,12 +36,7 @@ export default function Navbar() {
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>
-            <chakra.a
-              href="/"
-              title="Choc Home Page"
-              display="flex"
-              alignItems="center"
-            >
+            <chakra.a href="/" title="Onch" display="flex" alignItems="center">
               <Image w={"150px"} src={Logo?.src} />
               <VisuallyHidden>Onch</VisuallyHidden>
             </chakra.a>
@@ -101,6 +96,7 @@ export default function Navbar() {
                 p={2}
                 pb={4}
                 m={2}
+                zIndex={1}
                 spacing={3}
                 rounded="sm"
                 bgColor={"black"}
