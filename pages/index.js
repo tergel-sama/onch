@@ -18,9 +18,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* {t("myKey")} */}
-      <LanguageSwitcher lang="mn">mn</LanguageSwitcher> |{" "}
-      <LanguageSwitcher lang="en">en</LanguageSwitcher>
       <main className="bg-white max-w-[1920px] overflow-hidden m-auto">
         <section id="aboutUs">
           <Box p={{ md: 32, base: 6 }}>

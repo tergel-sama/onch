@@ -1,14 +1,11 @@
 import React from "react";
 import { useRouter } from "next/router";
-import {
-  useTranslation,
-  useLanguageQuery,
-  LanguageSwitcher,
-} from "next-export-i18n";
+import { useTranslation, LanguageSwitcher } from "next-export-i18n";
 
 import {
   chakra,
   Box,
+  Text,
   Flex,
   useColorModeValue,
   VisuallyHidden,
@@ -46,14 +43,15 @@ export default function Navbar() {
               alignItems="center"
             >
               <Image w={"150px"} src={Logo?.src} />
-              {/* <Logo /> */}
               <VisuallyHidden>Onch</VisuallyHidden>
             </chakra.a>
-            {/* <chakra.h1 color={"white"} fontSize="xl" fontWeight="medium" ml="2">
-              Choc
-            </chakra.h1> */}
           </Flex>
-          <HStack display="flex" alignItems="center" spacing={1}>
+          <HStack
+            textColor={"white"}
+            display="flex"
+            alignItems="center"
+            spacing={1}
+          >
             <HStack
               spacing={1}
               mr={1}
@@ -79,9 +77,9 @@ export default function Navbar() {
                 {t("nav5")}
               </Button>
             </HStack>
-            <Button onClick={() => {}} colorScheme="brand" size="sm">
-              EN
-            </Button>
+            <LanguageSwitcher lang="mn">mn</LanguageSwitcher>
+            <Text>|</Text>
+            <LanguageSwitcher lang="en">en</LanguageSwitcher>
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
                 display={{ base: "flex", md: "none" }}
