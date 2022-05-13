@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="hero-overlay bg-opacity-60 bg-black"></div>
       <div className="hero-content text-neutral-content w-full max-w-full">
         <div className="w-full xl:px-32">
-          <h1 className="leading-[5rem] mb-5 text-5xl font-bold text-white xl:text-[64px] xl:w-[60rem]">
+          <h1 className="md:leading-[5rem] leading-[3rem] mb-5 text-4xl font-bold text-white xl:text-[64px] xl:w-[60rem]">
             {t("heroTitle")}
           </h1>
           <p className="mb-5 text-white xl:w-[50rem]">{t("heroContent")}</p>

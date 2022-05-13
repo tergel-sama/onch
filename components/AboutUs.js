@@ -11,7 +11,7 @@ export default function AboutUs() {
         <Text
           textAlign={{ base: "justify", md: "left" }}
           pb={12}
-          fontSize={"24px"}
+          fontSize={{ md: "24px", base: "20px" }}
         >
           {t("ab1")}
         </Text>
@@ -19,7 +19,7 @@ export default function AboutUs() {
         <Text
           textAlign={{ base: "justify", md: "left" }}
           pb={12}
-          fontSize={"24px"}
+          fontSize={{ md: "24px", base: "20px" }}
         >
           {t("ab2")}
         </Text>
@@ -27,7 +27,7 @@ export default function AboutUs() {
         <Text
           textAlign={{ base: "justify", md: "left" }}
           pb={12}
-          fontSize={"24px"}
+          fontSize={{ md: "24px", base: "20px" }}
         >
           {t("ab3")}
         </Text>

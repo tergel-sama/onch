@@ -12,7 +12,7 @@ export default function HomeNews() {
   const router = useRouter();
   return (
     <>
-      <h1 className="text-[#217b2f] text-[64px] font-bold my-12">
+      <h1 className="text-[#217b2f] md:text-[64px] text-[44px] font-bold my-12">
         {t("news")}
       </h1>
       <SimpleGrid spacing={10} columns={{ xl: 2, base: 1 }}>

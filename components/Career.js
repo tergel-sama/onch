@@ -39,7 +39,7 @@ export default function Career() {
   );
   return (
     <>
-      <h1 className="text-[#217b2f] text-[64px] font-bold my-12 mt-32">
+      <h1 className="text-[#217b2f] md:text-[64px] text-[44px] font-bold my-12 mt-32">
         {t("career")}
       </h1>
       <SimpleGrid spacing={10} columns={{ xl: 3, base: 1 }}>
