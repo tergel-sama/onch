@@ -1,10 +1,11 @@
 import { Button } from "@chakra-ui/react";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
 import Nuur from "../images/nuur.jpg";
 
 export default function Hero() {
   const { t } = useTranslation();
+  const [query] = useLanguageQuery();
   const router = useRouter();
   return (
     <div
@@ -27,7 +28,7 @@ export default function Hero() {
             py={3}
             color="white"
             bgColor="#4eb85e"
-            onClick={() => router.push("/news/first")}
+            onClick={() => router.push(`/news/first?lang=${query?.lang}`)}
           >
             {t("readMore")}
           </Button>

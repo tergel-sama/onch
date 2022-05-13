@@ -1,5 +1,5 @@
 import { SimpleGrid } from "@chakra-ui/react";
-import { useTranslation } from "next-export-i18n";
+import { useTranslation, useLanguageQuery } from "next-export-i18n";
 import { useRouter } from "next/router";
 
 import NewsCard from "./NewsCard";
@@ -8,6 +8,7 @@ import bird from "../images/one_white_bird.jpg";
 
 export default function HomeNews() {
   const { t } = useTranslation();
+  const [query] = useLanguageQuery();
   const router = useRouter();
   return (
     <>
@@ -16,13 +17,13 @@ export default function HomeNews() {
       </h1>
       <SimpleGrid spacing={10} columns={{ xl: 2, base: 1 }}>
         <NewsCard
-          go={() => router.push("/news/first")}
+          go={() => router.push(`/news/first?lang=${query?.lang}`)}
           imageUrl={onch}
           body={t("newsTitle1")}
           date={"2022-04-01"}
         />
         <NewsCard
-          go={() => router.push("/news/second")}
+          go={() => router.push(`/news/second?lang=${query?.lang}`)}
           imageUrl={bird}
           body={t("newsTitle2")}
           date={"2022-04-01"}
