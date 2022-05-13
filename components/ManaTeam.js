@@ -3,13 +3,12 @@ import { SimpleGrid } from "@chakra-ui/react";
 import { useTranslation } from "next-export-i18n";
 
 import Member from "./Member";
-import batsukh from "../images/batsukh.jpg";
-import bayannemeh from "../images/bayannemeh.jpg";
-import byambasuren from "../images/byambasuren.jpg";
-import dendevsambuu from "../images/dendevsambuu.jpg";
-import javkhlant from "../images/javkhlant.jpg";
-import shagdarsuren from "../images/shagdarsuren.jpg";
-import nuurbatsuh from "../images/nuurbatsukh.jpg";
+import batsukh from "../images/nuurbatsukh.jpg";
+import bayannemeh from "../images/nuurbayannemeh.jpg";
+import byambasuren from "../images/nuurbyambasuren.jpg";
+import dendevsambuu from "../images/nuurdendevsambuu.jpg";
+import javkhlant from "../images/nuurjavhlant.jpg";
+import shagdarsuren from "../images/nuurshagdarsuren.jpg";
 
 export default function Manateam() {
   const { t } = useTranslation();
@@ -30,7 +29,7 @@ export default function Manateam() {
         {
           name: t("manName3"),
           position: t("manPos3"),
-          image: nuurbatsuh,
+          image: batsukh,
         },
         {
           name: t("manName4"),
@@ -48,7 +47,7 @@ export default function Manateam() {
           image: javkhlant,
         },
       ]),
-    [t("manaTeam")]
+    [t("anaTeam")]
   );
   return (
     <>

@@ -1,7 +1,7 @@
 import { Box, Image, Flex, Text } from "@chakra-ui/react";
 import { useTranslation } from "next-export-i18n";
 
-import AboutUsImage from "../images/aboutus.jpg";
+import AboutUsImage from "../images/building.jpg";
 
 export default function AboutUs() {
   const { t } = useTranslation();
