@@ -47,7 +47,7 @@ export default function Manateam() {
           image: javkhlant,
         },
       ]),
-    [t("anaTeam")]
+    [t("manaTeam")]
   );
   return (
     <>
