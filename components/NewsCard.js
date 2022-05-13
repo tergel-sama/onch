@@ -5,20 +5,20 @@ export default function NewsCard({ imageUrl, body, date, go }) {
   const { t } = useTranslation();
   return (
     <>
-      <div class="relative block h-[320px] rounded-2xl bg-black group">
+      <div className="relative block h-[320px] rounded-2xl bg-black group">
         <img
-          class="absolute inset-0 object-cover w-full h-full transition-opacity opacity-50 rounded-2xl"
+          className="absolute inset-0 object-cover w-full h-full transition-opacity opacity-50 rounded-2xl"
           src={imageUrl?.src}
           alt=""
         />
 
-        <div class="absolute inset-0 object-cover bg-[#4eb85e] w-full h-full transition-opacity opacity-0 rounded-2xl group-hover:opacity-[0.3]"></div>
-        <div class="relative xl:p-14 p-6 xl:pt-[12rem] h-[320px]">
-          <p class="text-[20px] font-medium  text-white ">{date}</p>
+        <div className="absolute inset-0 object-cover bg-[#4eb85e] w-full h-full transition-opacity opacity-0 rounded-2xl group-hover:opacity-[0.3]"></div>
+        <div className="relative xl:p-14 p-6 xl:pt-[12rem] h-[320px]">
+          <p className="text-[20px] font-medium  text-white ">{date}</p>
 
-          <p class="text-2xl font-bold text-white text-[24px]">{body}</p>
+          <p className="text-2xl font-bold text-white text-[24px]">{body}</p>
 
-          <div class="transition-all float-right transform translate-y-8 opacity-0  group-hover:opacity-100 group-hover:translate-y-0">
+          <div className="transition-all float-right transform translate-y-8 opacity-0  group-hover:opacity-100 group-hover:translate-y-0">
             <Button
               textColor={"white"}
               rounded={"2xl"}

@@ -8,18 +8,18 @@ export default function Hero() {
   const router = useRouter();
   return (
     <div
-      class="hero min-h-screen"
+      className="hero min-h-screen"
       style={{
         backgroundImage: `url(${Nuur?.src})`,
       }}
     >
-      <div class="hero-overlay bg-opacity-60 bg-black"></div>
-      <div class="hero-content text-neutral-content w-full max-w-full">
-        <div class="w-full xl:px-32">
-          <h1 class="leading-[5rem] mb-5 text-5xl font-bold text-white xl:text-[64px] xl:w-[60rem]">
+      <div className="hero-overlay bg-opacity-60 bg-black"></div>
+      <div className="hero-content text-neutral-content w-full max-w-full">
+        <div className="w-full xl:px-32">
+          <h1 className="leading-[5rem] mb-5 text-5xl font-bold text-white xl:text-[64px] xl:w-[60rem]">
             {t("heroTitle")}
           </h1>
-          <p class="mb-5 text-white xl:w-[50rem]">{t("heroContent")}</p>
+          <p className="mb-5 text-white xl:w-[50rem]">{t("heroContent")}</p>
           <Button
             fontSize={"15px"}
             rounded={"xl"}

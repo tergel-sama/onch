@@ -6,8 +6,8 @@ export default function App({ name, position, image }) {
     <Flex w="full" alignItems="center" justifyContent="center">
       <Box overflow="hidden" mx="auto">
         <Box textAlign="center">
-          <div class="avatar m-auto">
-            <div class="w-[250px] rounded-full">
+          <div className="avatar m-auto">
+            <div className="w-[250px] rounded-full">
               <img src={image?.src} />
             </div>
           </div>

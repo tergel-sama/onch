@@ -15,6 +15,8 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const { t, i18n } = useTranslation();
+  const [query] = useLanguageQuery();
+  console.log(query);
   return (
     <>
       <Hero />
