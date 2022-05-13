@@ -43,16 +43,13 @@ export default function Footer() {
             About us
           </Link>
           <Link fontSize={"20px"} href={"#"}>
-            Blog
+            Core services
+          </Link>
+          <Link fontSize={"20px"} href={"#"}>
+            News letter
           </Link>
           <Link fontSize={"20px"} href={"#"}>
             Contact us
-          </Link>
-          <Link fontSize={"20px"} href={"#"}>
-            Pricing
-          </Link>
-          <Link fontSize={"20px"} href={"#"}>
-            Testimonials
           </Link>
         </Stack>
         <Stack align={"flex-start"}>

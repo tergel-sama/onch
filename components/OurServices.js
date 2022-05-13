@@ -1,40 +1,46 @@
-import { HStack, Stack } from "@chakra-ui/react";
+import { useState, useEffect } from "react";
+import { Stack } from "@chakra-ui/react";
+import { useTranslation } from "next-export-i18n";
+
 import Card from "./Card";
-const data = [
-  {
-    number: "1",
-    title: "Audit Consulting Services",
-    content:
-      "Onch & Company proudly contribute to the integrity and stability of financial markets.",
-  },
-  {
-    number: "2",
-    title: "Tax advisory services",
-    content:
-      "At Onch & Company, our greatest joy comes from witnessing client success.",
-  },
-  {
-    number: "3",
-    title: "Risk consulting services",
-    content:
-      "Risk advisory practice provides comprehensive, in-depth internal control assessment and quality internal audits in accordance with international standards.",
-  },
-  {
-    number: "4",
-    title: "Management training",
-    content:
-      "Our professionals understand the value of going beyond just providing client service and transferring knowledge.",
-  },
-];
+
 export default function OurServices() {
+  const { t } = useTranslation();
+  const [data, setData] = useState([]);
+  useEffect(
+    () =>
+      setData([
+        {
+          number: "1",
+          title: t("ourSer1"),
+          content: t("ourSer12"),
+        },
+        {
+          number: "2",
+          title: t("ourSer2"),
+          content: t("ourSer22"),
+        },
+        {
+          number: "3",
+          title: t("ourSer3"),
+          content: t("ourSer32"),
+        },
+        {
+          number: "4",
+          title: t("ourSer4"),
+          content: t("ourSer42"),
+        },
+      ]),
+    []
+  );
   return (
     <>
-      <h1 className="text-[#217b2f] text-[64px] font-bold">Our services</h1>
+      <h1 className="text-[#217b2f] text-[64px] font-bold">{t("ourSer")}</h1>
       <Stack
         p={{ xl: 12, base: 6 }}
         direction={{ base: "column", "2xl": "row" }}
       >
-        {data.map((item, index) => {
+        {data?.map((item, index) => {
           return (
             <Card
               number={item.number}
