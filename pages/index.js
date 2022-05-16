@@ -1,11 +1,11 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box } from '@chakra-ui/react';
 
-import Hero from "../components/Hero";
-import OurServices from "../components/OurServices";
-import AboutUs from "../components/AboutUs";
-import HomeNews from "../components/HomeNews";
-import Manateam from "../components/ManaTeam";
-import Career from "../components/Career";
+import Hero from '../components/Hero';
+import OurServices from '../components/OurServices';
+import AboutUs from '../components/AboutUs';
+import HomeNews from '../components/HomeNews';
+import Manateam from '../components/ManaTeam';
+import Career from '../components/Career';
 
 export default function Home() {
   return (

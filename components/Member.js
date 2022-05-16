@@ -1,5 +1,5 @@
-import React from "react";
-import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { chakra, Box, Flex, Link } from '@chakra-ui/react';
 
 export default function App({ name, position, image }) {
   return (
@@ -8,7 +8,7 @@ export default function App({ name, position, image }) {
         <Box textAlign="center">
           <div className="avatar m-auto">
             <div className="w-[250px] rounded-full">
-              <img src={image?.src} />
+              <img alt="img" src={image?.src} />
             </div>
           </div>
           <chakra.span mt={6} display="block" fontSize="20px">
